@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Header from "./comps/Header"
+import ServiceLine from "./comps/ServiceLine"
+import Nav from "./comps/Nav"
+import Services from "./comps/Services"
+import ClientLine from "./comps/ClientLine"
+import Clients from "./comps/Clients"
+import TeamLine from "./comps/TeamLine"
+import Bur from "./comps/bur"
+import Navi from "./comps/Navi"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <Nav /> */}
+      {/* <Bur /> */}
+      <Navi />
+      <Header />
+      <ServiceLine />
+      <Services />
+      <ClientLine />
+      <Clients />
+      <TeamLine />
+    </>
+  )
 }
 
-export default App;
+export default App
